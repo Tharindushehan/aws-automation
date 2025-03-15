@@ -24,7 +24,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }} # Ensure this is the correct secret key
-          script: |:
+          script: |
             # Debugging - Check if the SSH connection is successful
             echo "Attempting to SSH into EC2 instance..."
             echo "Running commands on EC2..."
