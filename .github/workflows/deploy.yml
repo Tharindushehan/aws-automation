@@ -15,7 +15,7 @@ jobs:
         with:
           host: 3.81.233.4
           username: ec2-user
-          key: \${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             # Navigate to the project directory
             cd ~/aws-automation/docker
